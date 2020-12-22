@@ -1,0 +1,1 @@
+# How-to-customize-the-simplified-layout-in-WinForms-RibbonControlAdv
