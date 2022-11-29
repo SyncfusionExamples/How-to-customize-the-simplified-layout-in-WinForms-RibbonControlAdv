@@ -10,7 +10,7 @@ The RibbonControlAdv allows to customize the Ribbon and Ribbon items through the
     this.Controls.Add(ribbonControlAdv1);
 
 # C#
-// Switch between Simplified and Normal layout
+    // Switch between Simplified and Normal layout
     private Syncfusion.Windows.Forms.Tools.RibbonControlAdv ribbonControlAdv1;
 
     this.ribbonControlAdv1 = new RibbonControlAdv();
