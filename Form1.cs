@@ -35,9 +35,11 @@ namespace SimplifiedRibbonDemo
             InitializeComponent();
             foreach (ToolStripTabItem items in this.ribbonControlAdv1.Header.MainItems)
             {
-                foreach (ToolStripEx item in items.Panel.Controls)
+                foreach (var item in items.Panel.Controls)
                 {
-                    item.LauncherClick += new EventHandler(item_LauncherClick);
+                    ToolStripEx toolStripEx = item as ToolStripEx;
+                    if(toolStripEx != null)
+                    toolStripEx.LauncherClick += new EventHandler(item_LauncherClick);
                 }
             }
             PopulateColorTable();
